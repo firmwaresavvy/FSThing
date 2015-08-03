@@ -11,9 +11,10 @@ The project depends upon several external libraries:
 
 Third Party Libraries
 * ARM CMSIS Abstraction Layer (common C abstraction layer for all Cortex-M4F cores)
+* FatFS (our chosen FAT filesystem implementation)
+* FreeRTOS (our chosen RTOS)
 * STMicroelectronics Standard Peripheral Driver Library (C library for interaction with STM32F4xx peripherals)
 * lwIP (our chosen TCP/IP implementation)
-* FreeRTOS (our chosen RTOS)
 
 FirmwareSavvy Libraries
 * FS_Datatypes(commonly used type definitions and helper functions including interface types)
