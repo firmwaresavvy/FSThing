@@ -1,0 +1,31 @@
+[submodule "FS_Datatypes"]
+ path = lib/FirmwareSavvy/FS_Datatypes
+ url = https://github.com/firmwaresavvy/FS_Datatypes.git
+
+[submodule "FS_DeviceDrivers"]
+ path = lib/FirmwareSavvy/FS_DeviceDrivers
+ url = https://github.com/firmwaresavvy/FS_DeviceDrivers.git
+
+[submodule "FS_STM32F4xx_HAL"]
+ path = lib/FirmwareSavvy/FS_STM32F4xx_HAL
+ url = https://github.com/firmwaresavvy/FS_STM32F4xx_HAL.git
+
+[submodule "FS_System"]
+ path = lib/FirmwareSavvy/FS_System
+ url = https://github.com/firmwaresavvy/FS_System.git
+
+[submodule "CMSIS_2_10_CortexM4"]
+ path = lib/ThirdParty/ARM/CMSIS_2_10_CortexM4
+ url = https://github.com/firmwaresavvy/CMSIS_2_10_CortexM4.git
+
+[submodule "FatFS_R0_11"]
+ path = lib/ThirdParty/FatFS_R0_11
+ url = https://github.com/firmwaresavvy/FatFS_R0_11.git
+
+[submodule "FreeRTOS_8_2_1"]
+ path = lib/ThirdParty/FreeRTOS_8_2_1
+ url = https://github.com/firmwaresavvy/FreeRTOS_8_2_1.git
+
+[submodule "STM32F4xx_StdPeriphLib_1_0_0"]
+ path = lib/ThirdParty/STMicroelectronics/STM32F4xx_StdPeriphLib_1_0_0
+ url = https://github.com/firmwaresavvy/STM32F4xx_StdPeriphLib_1_0_0.git
