@@ -1,12 +1,12 @@
 # depslib dependency file v1.0
-1438701031 source:d:\dropbox\firmwaresavvy\code\fsthing\src\fsthing.c
+1438780996 source:d:\dropbox\firmwaresavvy\code\fsthing\src\fsthing.c
 	"FSThing.h"
 	"FS_System.h"
 	"FS_DT_Conf.h"
 	"system_stm32f4xx.h"
 	"stm32f4xx_conf.h"
 
-1437402611 d:\dropbox\firmwaresavvy\code\fsthing\inc\fsthing.h
+1438778975 d:\dropbox\firmwaresavvy\code\fsthing\inc\fsthing.h
 
 1438333779 d:\dropbox\firmwaresavvy\code\fsthing\lib\fs_system\inc\fs_system.h
 	<stdio.h>
@@ -563,16 +563,16 @@
 
 1437573071 source:d:\dropbox\firmwaresavvy\code\fsthing\lib\firmwaresavvy\fs_stm32f4xx_hal\src\fs_stm32f4xxi2c.c
 
-1437575042 source:d:\dropbox\firmwaresavvy\code\fsthing\lib\firmwaresavvy\fs_system\src\fs_system.c
+1438778502 source:d:\dropbox\firmwaresavvy\code\fsthing\lib\firmwaresavvy\fs_system\src\fs_system.c
 	"FS_System.h"
+	<stdbool.h>
 
-1438333779 d:\dropbox\firmwaresavvy\code\fsthing\lib\firmwaresavvy\fs_system\inc\fs_system.h
+1438777093 d:\dropbox\firmwaresavvy\code\fsthing\lib\firmwaresavvy\fs_system\inc\fs_system.h
 	<stdio.h>
 	"FS_Exception.h"
 	"FS_Filesystem.h"
 	"FS_Console.h"
 	"FS_Logging.h"
-	"FS_Kernel.h"
 	<stdint.h>
 	"FS_DT_USART.h"
 
