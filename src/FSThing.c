@@ -41,7 +41,6 @@ static void initModules(void);
 
 // Hardware init functions.
 static void initFineTimer(void);
-static void initWatchdog(void);
 static void initDebugUART(void);
 
 // Misc interrupt handlers.
@@ -96,7 +95,6 @@ static void initHardware(void)
   NVIC_PriorityGroupConfig( NVIC_PriorityGroup_4 );
 
   initFineTimer();
-  initWatchdog();
 
   // Comms peripherals.
   initDebugUART();
@@ -229,7 +227,5 @@ void vApplicationStackOverflowHook(void)
 
 void vApplicationIdleHook(void)
 {
-  static volatile uint32_t cnt;
 
-  cnt++;
 }
