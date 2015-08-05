@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1438333765 source:d:\dropbox\firmwaresavvy\code\fsthing\src\fsthing.c
+1438701031 source:d:\dropbox\firmwaresavvy\code\fsthing\src\fsthing.c
 	"FSThing.h"
 	"FS_System.h"
 	"FS_DT_Conf.h"
@@ -544,4 +544,332 @@
 	"task.h"
 
 1426974805 d:\dropbox\firmwaresavvy\code\freertosv8.2.1\freertos\source\portable\gcc\arm_cm4f\portmacro.h
+
+1437395409 source:d:\dropbox\firmwaresavvy\code\fsthing\lib\firmwaresavvy\fs_datatypes\src\fs_dt_gpio.c
+	"FS_DT_Conf.h"
+	"FS_DT_GPIO.h"
+
+1438155484 d:\dropbox\firmwaresavvy\code\fsthing\libconf\fs_dt_conf.h
+	"FS_DT_GPIO.h"
+	"FS_DT_I2C.h"
+	"FS_DT_USART.h"
+
+1438082413 d:\dropbox\firmwaresavvy\code\fsthing\lib\firmwaresavvy\fs_datatypes\inc\fs_dt_gpio.h
+	<stdint.h>
+
+1437570862 d:\dropbox\firmwaresavvy\code\fsthing\lib\firmwaresavvy\fs_datatypes\inc\fs_dt_i2c.h
+
+1438082261 d:\dropbox\firmwaresavvy\code\fsthing\lib\firmwaresavvy\fs_datatypes\inc\fs_dt_usart.h
+
+1437573071 source:d:\dropbox\firmwaresavvy\code\fsthing\lib\firmwaresavvy\fs_stm32f4xx_hal\src\fs_stm32f4xxi2c.c
+
+1437575042 source:d:\dropbox\firmwaresavvy\code\fsthing\lib\firmwaresavvy\fs_system\src\fs_system.c
+	"FS_System.h"
+
+1438333779 d:\dropbox\firmwaresavvy\code\fsthing\lib\firmwaresavvy\fs_system\inc\fs_system.h
+	<stdio.h>
+	"FS_Exception.h"
+	"FS_Filesystem.h"
+	"FS_Console.h"
+	"FS_Logging.h"
+	"FS_Kernel.h"
+	<stdint.h>
+	"FS_DT_USART.h"
+
+1438078534 d:\dropbox\firmwaresavvy\code\fsthing\lib\firmwaresavvy\fs_system\inc\fs_exception.h
+	"stdint.h"
+
+1438079998 d:\dropbox\firmwaresavvy\code\fsthing\lib\firmwaresavvy\fs_system\inc\fs_filesystem.h
+
+1438081004 d:\dropbox\firmwaresavvy\code\fsthing\lib\firmwaresavvy\fs_system\inc\fs_console.h
+
+1438081138 d:\dropbox\firmwaresavvy\code\fsthing\lib\firmwaresavvy\fs_system\inc\fs_logging.h
+
+1438333752 d:\dropbox\firmwaresavvy\code\fsthing\lib\firmwaresavvy\fs_system\inc\fs_kernel.h
+
+1426974796 source:d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\freertos_8_2_1\source\croutine.c
+	"FreeRTOS.h"
+	"task.h"
+	"croutine.h"
+
+1438339057 d:\dropbox\firmwaresavvy\code\fsthing\libconf\freertosconfig.h
+
+1426974796 source:d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\freertos_8_2_1\source\event_groups.c
+	<stdlib.h>
+	"FreeRTOS.h"
+	"task.h"
+	"timers.h"
+	"event_groups.h"
+
+1426974800 source:d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\freertos_8_2_1\source\list.c
+	<stdlib.h>
+	"FreeRTOS.h"
+	"list.h"
+
+1426974805 source:d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\freertos_8_2_1\source\portable\gcc\arm_cm4f\port.c
+	"FreeRTOS.h"
+	"task.h"
+
+1437386139 d:\dropbox\firmwaresavvy\code\fsthing\libconf\stm32f4xx_conf.h
+	"stm32f4xx_adc.h"
+	"stm32f4xx_can.h"
+	"stm32f4xx_crc.h"
+	"stm32f4xx_cryp.h"
+	"stm32f4xx_dac.h"
+	"stm32f4xx_dbgmcu.h"
+	"stm32f4xx_dcmi.h"
+	"stm32f4xx_dma.h"
+	"stm32f4xx_exti.h"
+	"stm32f4xx_flash.h"
+	"stm32f4xx_fsmc.h"
+	"stm32f4xx_hash.h"
+	"stm32f4xx_gpio.h"
+	"stm32f4xx_i2c.h"
+	"stm32f4xx_iwdg.h"
+	"stm32f4xx_pwr.h"
+	"stm32f4xx_rcc.h"
+	"stm32f4xx_rng.h"
+	"stm32f4xx_rtc.h"
+	"stm32f4xx_sdio.h"
+	"stm32f4xx_spi.h"
+	"stm32f4xx_syscfg.h"
+	"stm32f4xx_tim.h"
+	"stm32f4xx_usart.h"
+	"stm32f4xx_wwdg.h"
+	"misc.h"
+
+1437386139 d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\stmicroelectronics\stm32f4xx_stdperiphlib_1_0_0\inc\stm32f4xx_adc.h
+	"stm32f4xx.h"
+
+1437386139 d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\arm\cmsis_2_10_cortexm4\core_cm4.h
+	<stdint.h>
+	<core_cmInstr.h>
+	<core_cmFunc.h>
+	<core_cm4_simd.h>
+
+1437386139 d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\arm\cmsis_2_10_cortexm4\core_cminstr.h
+	<cmsis_iar.h>
+
+1437386139 d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\arm\cmsis_2_10_cortexm4\core_cmfunc.h
+	<cmsis_iar.h>
+
+1437386139 d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\arm\cmsis_2_10_cortexm4\core_cm4_simd.h
+	<cmsis_iar.h>
+
+1437386139 d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\stmicroelectronics\stm32f4xx_stdperiphlib_1_0_0\inc\stm32f4xx_can.h
+	"stm32f4xx.h"
+
+1437386139 d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\stmicroelectronics\stm32f4xx_stdperiphlib_1_0_0\inc\stm32f4xx_crc.h
+	"stm32f4xx.h"
+
+1437386139 d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\stmicroelectronics\stm32f4xx_stdperiphlib_1_0_0\inc\stm32f4xx_cryp.h
+	"stm32f4xx.h"
+
+1437386139 d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\stmicroelectronics\stm32f4xx_stdperiphlib_1_0_0\inc\stm32f4xx_dac.h
+	"stm32f4xx.h"
+
+1437386139 d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\stmicroelectronics\stm32f4xx_stdperiphlib_1_0_0\inc\stm32f4xx_dbgmcu.h
+	"stm32f4xx.h"
+
+1437386139 d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\stmicroelectronics\stm32f4xx_stdperiphlib_1_0_0\inc\stm32f4xx_dcmi.h
+	"stm32f4xx.h"
+
+1437386139 d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\stmicroelectronics\stm32f4xx_stdperiphlib_1_0_0\inc\stm32f4xx_dma.h
+	"stm32f4xx.h"
+
+1437386139 d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\stmicroelectronics\stm32f4xx_stdperiphlib_1_0_0\inc\stm32f4xx_exti.h
+	"stm32f4xx.h"
+
+1437386139 d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\stmicroelectronics\stm32f4xx_stdperiphlib_1_0_0\inc\stm32f4xx_flash.h
+	"stm32f4xx.h"
+
+1437386139 d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\stmicroelectronics\stm32f4xx_stdperiphlib_1_0_0\inc\stm32f4xx_fsmc.h
+	"stm32f4xx.h"
+
+1437386139 d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\stmicroelectronics\stm32f4xx_stdperiphlib_1_0_0\inc\stm32f4xx_hash.h
+	"stm32f4xx.h"
+
+1437386139 d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\stmicroelectronics\stm32f4xx_stdperiphlib_1_0_0\inc\stm32f4xx_gpio.h
+	"stm32f4xx.h"
+
+1437386139 d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\stmicroelectronics\stm32f4xx_stdperiphlib_1_0_0\inc\stm32f4xx_i2c.h
+	"stm32f4xx.h"
+
+1437386139 d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\stmicroelectronics\stm32f4xx_stdperiphlib_1_0_0\inc\stm32f4xx_iwdg.h
+	"stm32f4xx.h"
+
+1437386139 d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\stmicroelectronics\stm32f4xx_stdperiphlib_1_0_0\inc\stm32f4xx_pwr.h
+	"stm32f4xx.h"
+
+1437386139 d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\stmicroelectronics\stm32f4xx_stdperiphlib_1_0_0\inc\stm32f4xx_rcc.h
+	"stm32f4xx.h"
+
+1437386139 d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\stmicroelectronics\stm32f4xx_stdperiphlib_1_0_0\inc\stm32f4xx_rng.h
+	"stm32f4xx.h"
+
+1437386139 d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\stmicroelectronics\stm32f4xx_stdperiphlib_1_0_0\inc\stm32f4xx_rtc.h
+	"stm32f4xx.h"
+
+1437386139 d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\stmicroelectronics\stm32f4xx_stdperiphlib_1_0_0\inc\stm32f4xx_sdio.h
+	"stm32f4xx.h"
+
+1437386139 d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\stmicroelectronics\stm32f4xx_stdperiphlib_1_0_0\inc\stm32f4xx_spi.h
+	"stm32f4xx.h"
+
+1437386139 d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\stmicroelectronics\stm32f4xx_stdperiphlib_1_0_0\inc\stm32f4xx_syscfg.h
+	"stm32f4xx.h"
+
+1437386139 d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\stmicroelectronics\stm32f4xx_stdperiphlib_1_0_0\inc\stm32f4xx_tim.h
+	"stm32f4xx.h"
+
+1437386139 d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\stmicroelectronics\stm32f4xx_stdperiphlib_1_0_0\inc\stm32f4xx_usart.h
+	"stm32f4xx.h"
+
+1437386139 d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\stmicroelectronics\stm32f4xx_stdperiphlib_1_0_0\inc\stm32f4xx_wwdg.h
+	"stm32f4xx.h"
+
+1437386139 d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\stmicroelectronics\stm32f4xx_stdperiphlib_1_0_0\inc\misc.h
+	"stm32f4xx.h"
+
+1426974816 source:d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\freertos_8_2_1\source\portable\memmang\heap_4.c
+	<stdlib.h>
+	"FreeRTOS.h"
+	"task.h"
+
+1426974824 source:d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\freertos_8_2_1\source\queue.c
+	<stdlib.h>
+	<string.h>
+	"FreeRTOS.h"
+	"task.h"
+	"queue.h"
+	"croutine.h"
+
+1427135492 source:d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\freertos_8_2_1\source\tasks.c
+	<stdlib.h>
+	<string.h>
+	"FreeRTOS.h"
+	"task.h"
+	"timers.h"
+	"StackMacros.h"
+	<stdio.h>
+	"tasks_test_access_functions.h"
+
+1426974826 source:d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\freertos_8_2_1\source\timers.c
+	<stdlib.h>
+	"FreeRTOS.h"
+	"task.h"
+	"queue.h"
+	"timers.h"
+
+1437386139 source:d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\stmicroelectronics\stm32f4xx_stdperiphlib_1_0_0\src\misc.c
+	"misc.h"
+
+1437386139 source:d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\stmicroelectronics\stm32f4xx_stdperiphlib_1_0_0\src\stm32f4xx_adc.c
+	"stm32f4xx_adc.h"
+	"stm32f4xx_rcc.h"
+
+1437386139 source:d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\stmicroelectronics\stm32f4xx_stdperiphlib_1_0_0\src\stm32f4xx_can.c
+	"stm32f4xx_can.h"
+	"stm32f4xx_rcc.h"
+
+1437386139 source:d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\stmicroelectronics\stm32f4xx_stdperiphlib_1_0_0\src\stm32f4xx_crc.c
+	"stm32f4xx_crc.h"
+
+1437386139 source:d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\stmicroelectronics\stm32f4xx_stdperiphlib_1_0_0\src\stm32f4xx_cryp.c
+	"stm32f4xx_cryp.h"
+	"stm32f4xx_rcc.h"
+
+1437386139 source:d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\stmicroelectronics\stm32f4xx_stdperiphlib_1_0_0\src\stm32f4xx_cryp_aes.c
+	"stm32f4xx_cryp.h"
+
+1437386139 source:d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\stmicroelectronics\stm32f4xx_stdperiphlib_1_0_0\src\stm32f4xx_cryp_des.c
+	"stm32f4xx_cryp.h"
+
+1437386139 source:d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\stmicroelectronics\stm32f4xx_stdperiphlib_1_0_0\src\stm32f4xx_cryp_tdes.c
+	"stm32f4xx_cryp.h"
+
+1437386139 source:d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\stmicroelectronics\stm32f4xx_stdperiphlib_1_0_0\src\stm32f4xx_dac.c
+	"stm32f4xx_dac.h"
+	"stm32f4xx_rcc.h"
+
+1437386139 source:d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\stmicroelectronics\stm32f4xx_stdperiphlib_1_0_0\src\stm32f4xx_dbgmcu.c
+	"stm32f4xx_dbgmcu.h"
+
+1437386139 source:d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\stmicroelectronics\stm32f4xx_stdperiphlib_1_0_0\src\stm32f4xx_dcmi.c
+	"stm32f4xx_dcmi.h"
+	"stm32f4xx_rcc.h"
+
+1437386139 source:d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\stmicroelectronics\stm32f4xx_stdperiphlib_1_0_0\src\stm32f4xx_dma.c
+	"stm32f4xx_dma.h"
+	"stm32f4xx_rcc.h"
+
+1437386139 source:d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\stmicroelectronics\stm32f4xx_stdperiphlib_1_0_0\src\stm32f4xx_exti.c
+	"stm32f4xx_exti.h"
+
+1437386139 source:d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\stmicroelectronics\stm32f4xx_stdperiphlib_1_0_0\src\stm32f4xx_flash.c
+	"stm32f4xx_flash.h"
+
+1437386139 source:d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\stmicroelectronics\stm32f4xx_stdperiphlib_1_0_0\src\stm32f4xx_fsmc.c
+	"stm32f4xx_fsmc.h"
+	"stm32f4xx_rcc.h"
+
+1437386139 source:d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\stmicroelectronics\stm32f4xx_stdperiphlib_1_0_0\src\stm32f4xx_gpio.c
+	"stm32f4xx_gpio.h"
+	"stm32f4xx_rcc.h"
+
+1437386139 source:d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\stmicroelectronics\stm32f4xx_stdperiphlib_1_0_0\src\stm32f4xx_hash.c
+	"stm32f4xx_hash.h"
+	"stm32f4xx_rcc.h"
+
+1437386139 source:d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\stmicroelectronics\stm32f4xx_stdperiphlib_1_0_0\src\stm32f4xx_hash_md5.c
+	"stm32f4xx_hash.h"
+
+1437386139 source:d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\stmicroelectronics\stm32f4xx_stdperiphlib_1_0_0\src\stm32f4xx_hash_sha1.c
+	"stm32f4xx_hash.h"
+
+1437386139 source:d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\stmicroelectronics\stm32f4xx_stdperiphlib_1_0_0\src\stm32f4xx_i2c.c
+	"stm32f4xx_i2c.h"
+	"stm32f4xx_rcc.h"
+
+1437386139 source:d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\stmicroelectronics\stm32f4xx_stdperiphlib_1_0_0\src\stm32f4xx_iwdg.c
+	"stm32f4xx_iwdg.h"
+
+1437386139 source:d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\stmicroelectronics\stm32f4xx_stdperiphlib_1_0_0\src\stm32f4xx_pwr.c
+	"stm32f4xx_pwr.h"
+	"stm32f4xx_rcc.h"
+
+1437386139 source:d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\stmicroelectronics\stm32f4xx_stdperiphlib_1_0_0\src\stm32f4xx_rcc.c
+	"stm32f4xx_rcc.h"
+
+1437386139 source:d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\stmicroelectronics\stm32f4xx_stdperiphlib_1_0_0\src\stm32f4xx_rng.c
+	"stm32f4xx_rng.h"
+	"stm32f4xx_rcc.h"
+
+1437386139 source:d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\stmicroelectronics\stm32f4xx_stdperiphlib_1_0_0\src\stm32f4xx_rtc.c
+	"stm32f4xx_rtc.h"
+	"stm32f4xx_rcc.h"
+
+1437386139 source:d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\stmicroelectronics\stm32f4xx_stdperiphlib_1_0_0\src\stm32f4xx_sdio.c
+	"stm32f4xx_sdio.h"
+	"stm32f4xx_rcc.h"
+
+1437386139 source:d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\stmicroelectronics\stm32f4xx_stdperiphlib_1_0_0\src\stm32f4xx_spi.c
+	"stm32f4xx_spi.h"
+	"stm32f4xx_rcc.h"
+
+1437386139 source:d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\stmicroelectronics\stm32f4xx_stdperiphlib_1_0_0\src\stm32f4xx_syscfg.c
+	"stm32f4xx_syscfg.h"
+	"stm32f4xx_rcc.h"
+
+1437386139 source:d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\stmicroelectronics\stm32f4xx_stdperiphlib_1_0_0\src\stm32f4xx_tim.c
+	"stm32f4xx_tim.h"
+	"stm32f4xx_rcc.h"
+
+1437386139 source:d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\stmicroelectronics\stm32f4xx_stdperiphlib_1_0_0\src\stm32f4xx_usart.c
+	"stm32f4xx_usart.h"
+	"stm32f4xx_rcc.h"
+
+1437386139 source:d:\dropbox\firmwaresavvy\code\fsthing\lib\thirdparty\stmicroelectronics\stm32f4xx_stdperiphlib_1_0_0\src\stm32f4xx_wwdg.c
+	"stm32f4xx_wwdg.h"
+	"stm32f4xx_rcc.h"
 

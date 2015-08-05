@@ -52,7 +52,7 @@
 		<Device>
 			<Add option="$device=cortex-m4" />
 			<Add option="$fpu=fpv4-sp-d16" />
-			<Add option="$lscript=./stm32f401cb_flash.ld" />
+			<Add option="$lscript=./stm32f407vg_flash.ld" />
 			<Add option="$stack=0x0100" />
 			<Add option="$heap=0x0000" />
 		</Device>
@@ -60,7 +60,7 @@
 			<Add option="-mfloat-abi=hard" />
 			<Add option="-DARM_MATH_CM4" />
 			<Add option="-D__FPU_USED" />
-			<Add option="-DSTM32F401CB" />
+			<Add option="-DSTM32F407VG" />
 			<Add option="-DSTM32F4XX" />
 			<Add option="-DUSE_STDPERIPH_DRIVER" />
 			<Add option="-fno-strict-aliasing" />
@@ -76,161 +76,201 @@
 			<Add option="-eb_start_files" />
 			<Add option="-eb_lib=n" />
 		</Linker>
-		<Unit filename="SPL\inc\misc.h" />
-		<Unit filename="SPL\inc\stm32f4xx_adc.h" />
-		<Unit filename="SPL\inc\stm32f4xx_can.h" />
-		<Unit filename="SPL\inc\stm32f4xx_crc.h" />
-		<Unit filename="SPL\inc\stm32f4xx_cryp.h" />
-		<Unit filename="SPL\inc\stm32f4xx_dac.h" />
-		<Unit filename="SPL\inc\stm32f4xx_dbgmcu.h" />
-		<Unit filename="SPL\inc\stm32f4xx_dcmi.h" />
-		<Unit filename="SPL\inc\stm32f4xx_dma.h" />
-		<Unit filename="SPL\inc\stm32f4xx_exti.h" />
-		<Unit filename="SPL\inc\stm32f4xx_flash.h" />
-		<Unit filename="SPL\inc\stm32f4xx_fsmc.h" />
-		<Unit filename="SPL\inc\stm32f4xx_gpio.h" />
-		<Unit filename="SPL\inc\stm32f4xx_hash.h" />
-		<Unit filename="SPL\inc\stm32f4xx_i2c.h" />
-		<Unit filename="SPL\inc\stm32f4xx_iwdg.h" />
-		<Unit filename="SPL\inc\stm32f4xx_pwr.h" />
-		<Unit filename="SPL\inc\stm32f4xx_rcc.h" />
-		<Unit filename="SPL\inc\stm32f4xx_rng.h" />
-		<Unit filename="SPL\inc\stm32f4xx_rtc.h" />
-		<Unit filename="SPL\inc\stm32f4xx_sdio.h" />
-		<Unit filename="SPL\inc\stm32f4xx_spi.h" />
-		<Unit filename="SPL\inc\stm32f4xx_syscfg.h" />
-		<Unit filename="SPL\inc\stm32f4xx_tim.h" />
-		<Unit filename="SPL\inc\stm32f4xx_usart.h" />
-		<Unit filename="SPL\inc\stm32f4xx_wwdg.h" />
-		<Unit filename="SPL\src\misc.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="SPL\src\stm32f4xx_adc.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="SPL\src\stm32f4xx_can.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="SPL\src\stm32f4xx_crc.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="SPL\src\stm32f4xx_cryp.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="SPL\src\stm32f4xx_cryp_aes.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="SPL\src\stm32f4xx_cryp_des.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="SPL\src\stm32f4xx_cryp_tdes.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="SPL\src\stm32f4xx_dac.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="SPL\src\stm32f4xx_dbgmcu.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="SPL\src\stm32f4xx_dcmi.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="SPL\src\stm32f4xx_dma.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="SPL\src\stm32f4xx_exti.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="SPL\src\stm32f4xx_flash.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="SPL\src\stm32f4xx_fsmc.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="SPL\src\stm32f4xx_gpio.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="SPL\src\stm32f4xx_hash.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="SPL\src\stm32f4xx_hash_md5.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="SPL\src\stm32f4xx_hash_sha1.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="SPL\src\stm32f4xx_i2c.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="SPL\src\stm32f4xx_iwdg.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="SPL\src\stm32f4xx_pwr.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="SPL\src\stm32f4xx_rcc.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="SPL\src\stm32f4xx_rng.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="SPL\src\stm32f4xx_rtc.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="SPL\src\stm32f4xx_sdio.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="SPL\src\stm32f4xx_spi.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="SPL\src\stm32f4xx_syscfg.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="SPL\src\stm32f4xx_tim.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="SPL\src\stm32f4xx_usart.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="SPL\src\stm32f4xx_wwdg.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="cmsis\arm_common_tables.h" />
-		<Unit filename="cmsis\arm_math.h" />
-		<Unit filename="cmsis\core_cm4.h" />
-		<Unit filename="cmsis\core_cm4_simd.h" />
-		<Unit filename="cmsis\core_cmFunc.h" />
-		<Unit filename="cmsis\core_cmInstr.h" />
-		<Unit filename="inc\FST_Blinky.h" />
 		<Unit filename="inc\FSThing.h" />
-		<Unit filename="inc\FS_DT_Conf.h" />
-		<Unit filename="inc\FS_Datatypes.h" />
-		<Unit filename="inc\FreeRTOSConfig.h" />
+		<Unit filename="inc\fst_blinky.h" />
 		<Unit filename="inc\stm32f4xx.h" />
-		<Unit filename="inc\stm32f4xx_conf.h" />
 		<Unit filename="inc\system_stm32f4xx.h" />
-		<Unit filename="lib\FS_Datatypes\inc\FS_DT_GPIO.h" />
-		<Unit filename="lib\FS_Datatypes\inc\FS_DT_I2C.h" />
-		<Unit filename="lib\FS_Datatypes\inc\FS_DT_USART.h" />
-		<Unit filename="lib\FS_Datatypes\src\FS_DT_GPIO.c">
+		<Unit filename="lib\FirmwareSavvy\FS_Datatypes\inc\FS_DT_I2C.h" />
+		<Unit filename="lib\FirmwareSavvy\FS_Datatypes\inc\FS_DT_USART.h" />
+		<Unit filename="lib\FirmwareSavvy\FS_Datatypes\inc\fs_dt_gpio.h" />
+		<Unit filename="lib\FirmwareSavvy\FS_Datatypes\src\FS_DT_GPIO.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="lib\FS_MCU_Abstractions\inc\FS_STM32F4xxGPIO.h" />
-		<Unit filename="lib\FS_MCU_Abstractions\inc\FS_STM32F4xxI2C.h" />
-		<Unit filename="lib\FS_MCU_Abstractions\src\FS_STM32F4xxI2C.c">
+		<Unit filename="lib\FirmwareSavvy\FS_STM32F4xx_HAL\inc\FS_STM32F4xxGPIO.h" />
+		<Unit filename="lib\FirmwareSavvy\FS_STM32F4xx_HAL\inc\FS_STM32F4xxI2C.h" />
+		<Unit filename="lib\FirmwareSavvy\FS_STM32F4xx_HAL\src\FS_STM32F4xxI2C.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="lib\FS_System\inc\FS_Console.h" />
-		<Unit filename="lib\FS_System\inc\FS_Exception.h" />
-		<Unit filename="lib\FS_System\inc\FS_Filesystem.h" />
-		<Unit filename="lib\FS_System\inc\FS_Kernel.h" />
-		<Unit filename="lib\FS_System\inc\FS_Logging.h" />
-		<Unit filename="lib\FS_System\inc\FS_System.h" />
-		<Unit filename="lib\FS_System\inc\FS_Time.h" />
-		<Unit filename="lib\FS_System\src\FS_System.c">
+		<Unit filename="lib\FirmwareSavvy\FS_System\inc\FS_Console.h" />
+		<Unit filename="lib\FirmwareSavvy\FS_System\inc\FS_Filesystem.h" />
+		<Unit filename="lib\FirmwareSavvy\FS_System\inc\FS_Kernel.h" />
+		<Unit filename="lib\FirmwareSavvy\FS_System\inc\FS_Logging.h" />
+		<Unit filename="lib\FirmwareSavvy\FS_System\inc\FS_System.h" />
+		<Unit filename="lib\FirmwareSavvy\FS_System\inc\FS_Time.h" />
+		<Unit filename="lib\FirmwareSavvy\FS_System\inc\fs_exception.h" />
+		<Unit filename="lib\FirmwareSavvy\FS_System\src\FS_System.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="readme.txt" />
+		<Unit filename="lib\ThirdParty\ARM\CMSIS_2_10_CortexM4\arm_common_tables.h" />
+		<Unit filename="lib\ThirdParty\ARM\CMSIS_2_10_CortexM4\arm_math.h" />
+		<Unit filename="lib\ThirdParty\ARM\CMSIS_2_10_CortexM4\core_cm4.h" />
+		<Unit filename="lib\ThirdParty\ARM\CMSIS_2_10_CortexM4\core_cm4_simd.h" />
+		<Unit filename="lib\ThirdParty\ARM\CMSIS_2_10_CortexM4\core_cmFunc.h" />
+		<Unit filename="lib\ThirdParty\ARM\CMSIS_2_10_CortexM4\core_cmInstr.h" />
+		<Unit filename="lib\ThirdParty\FatFS_R0_11\src\diskio.h" />
+		<Unit filename="lib\ThirdParty\FatFS_R0_11\src\ff.h" />
+		<Unit filename="lib\ThirdParty\FatFS_R0_11\src\ffconf.h" />
+		<Unit filename="lib\ThirdParty\FatFS_R0_11\src\integer.h" />
+		<Unit filename="lib\ThirdParty\FreeRTOS_8_2_1\Source\croutine.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lib\ThirdParty\FreeRTOS_8_2_1\Source\event_groups.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lib\ThirdParty\FreeRTOS_8_2_1\Source\include\FreeRTOS.h" />
+		<Unit filename="lib\ThirdParty\FreeRTOS_8_2_1\Source\include\StackMacros.h" />
+		<Unit filename="lib\ThirdParty\FreeRTOS_8_2_1\Source\include\croutine.h" />
+		<Unit filename="lib\ThirdParty\FreeRTOS_8_2_1\Source\include\deprecated_definitions.h" />
+		<Unit filename="lib\ThirdParty\FreeRTOS_8_2_1\Source\include\event_groups.h" />
+		<Unit filename="lib\ThirdParty\FreeRTOS_8_2_1\Source\include\list.h" />
+		<Unit filename="lib\ThirdParty\FreeRTOS_8_2_1\Source\include\mpu_wrappers.h" />
+		<Unit filename="lib\ThirdParty\FreeRTOS_8_2_1\Source\include\portable.h" />
+		<Unit filename="lib\ThirdParty\FreeRTOS_8_2_1\Source\include\projdefs.h" />
+		<Unit filename="lib\ThirdParty\FreeRTOS_8_2_1\Source\include\queue.h" />
+		<Unit filename="lib\ThirdParty\FreeRTOS_8_2_1\Source\include\semphr.h" />
+		<Unit filename="lib\ThirdParty\FreeRTOS_8_2_1\Source\include\task.h" />
+		<Unit filename="lib\ThirdParty\FreeRTOS_8_2_1\Source\include\timers.h" />
+		<Unit filename="lib\ThirdParty\FreeRTOS_8_2_1\Source\list.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lib\ThirdParty\FreeRTOS_8_2_1\Source\portable\GCC\ARM_CM4F\port.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lib\ThirdParty\FreeRTOS_8_2_1\Source\portable\GCC\ARM_CM4F\portmacro.h" />
+		<Unit filename="lib\ThirdParty\FreeRTOS_8_2_1\Source\portable\MemMang\heap_4.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lib\ThirdParty\FreeRTOS_8_2_1\Source\queue.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lib\ThirdParty\FreeRTOS_8_2_1\Source\tasks.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lib\ThirdParty\FreeRTOS_8_2_1\Source\timers.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lib\ThirdParty\STMicroelectronics\STM32F4xx_StdPeriphLib_1_0_0\inc\misc.h" />
+		<Unit filename="lib\ThirdParty\STMicroelectronics\STM32F4xx_StdPeriphLib_1_0_0\inc\stm32f4xx_adc.h" />
+		<Unit filename="lib\ThirdParty\STMicroelectronics\STM32F4xx_StdPeriphLib_1_0_0\inc\stm32f4xx_can.h" />
+		<Unit filename="lib\ThirdParty\STMicroelectronics\STM32F4xx_StdPeriphLib_1_0_0\inc\stm32f4xx_crc.h" />
+		<Unit filename="lib\ThirdParty\STMicroelectronics\STM32F4xx_StdPeriphLib_1_0_0\inc\stm32f4xx_cryp.h" />
+		<Unit filename="lib\ThirdParty\STMicroelectronics\STM32F4xx_StdPeriphLib_1_0_0\inc\stm32f4xx_dac.h" />
+		<Unit filename="lib\ThirdParty\STMicroelectronics\STM32F4xx_StdPeriphLib_1_0_0\inc\stm32f4xx_dbgmcu.h" />
+		<Unit filename="lib\ThirdParty\STMicroelectronics\STM32F4xx_StdPeriphLib_1_0_0\inc\stm32f4xx_dcmi.h" />
+		<Unit filename="lib\ThirdParty\STMicroelectronics\STM32F4xx_StdPeriphLib_1_0_0\inc\stm32f4xx_dma.h" />
+		<Unit filename="lib\ThirdParty\STMicroelectronics\STM32F4xx_StdPeriphLib_1_0_0\inc\stm32f4xx_exti.h" />
+		<Unit filename="lib\ThirdParty\STMicroelectronics\STM32F4xx_StdPeriphLib_1_0_0\inc\stm32f4xx_flash.h" />
+		<Unit filename="lib\ThirdParty\STMicroelectronics\STM32F4xx_StdPeriphLib_1_0_0\inc\stm32f4xx_fsmc.h" />
+		<Unit filename="lib\ThirdParty\STMicroelectronics\STM32F4xx_StdPeriphLib_1_0_0\inc\stm32f4xx_gpio.h" />
+		<Unit filename="lib\ThirdParty\STMicroelectronics\STM32F4xx_StdPeriphLib_1_0_0\inc\stm32f4xx_hash.h" />
+		<Unit filename="lib\ThirdParty\STMicroelectronics\STM32F4xx_StdPeriphLib_1_0_0\inc\stm32f4xx_i2c.h" />
+		<Unit filename="lib\ThirdParty\STMicroelectronics\STM32F4xx_StdPeriphLib_1_0_0\inc\stm32f4xx_iwdg.h" />
+		<Unit filename="lib\ThirdParty\STMicroelectronics\STM32F4xx_StdPeriphLib_1_0_0\inc\stm32f4xx_pwr.h" />
+		<Unit filename="lib\ThirdParty\STMicroelectronics\STM32F4xx_StdPeriphLib_1_0_0\inc\stm32f4xx_rcc.h" />
+		<Unit filename="lib\ThirdParty\STMicroelectronics\STM32F4xx_StdPeriphLib_1_0_0\inc\stm32f4xx_rng.h" />
+		<Unit filename="lib\ThirdParty\STMicroelectronics\STM32F4xx_StdPeriphLib_1_0_0\inc\stm32f4xx_rtc.h" />
+		<Unit filename="lib\ThirdParty\STMicroelectronics\STM32F4xx_StdPeriphLib_1_0_0\inc\stm32f4xx_sdio.h" />
+		<Unit filename="lib\ThirdParty\STMicroelectronics\STM32F4xx_StdPeriphLib_1_0_0\inc\stm32f4xx_spi.h" />
+		<Unit filename="lib\ThirdParty\STMicroelectronics\STM32F4xx_StdPeriphLib_1_0_0\inc\stm32f4xx_syscfg.h" />
+		<Unit filename="lib\ThirdParty\STMicroelectronics\STM32F4xx_StdPeriphLib_1_0_0\inc\stm32f4xx_tim.h" />
+		<Unit filename="lib\ThirdParty\STMicroelectronics\STM32F4xx_StdPeriphLib_1_0_0\inc\stm32f4xx_usart.h" />
+		<Unit filename="lib\ThirdParty\STMicroelectronics\STM32F4xx_StdPeriphLib_1_0_0\inc\stm32f4xx_wwdg.h" />
+		<Unit filename="lib\ThirdParty\STMicroelectronics\STM32F4xx_StdPeriphLib_1_0_0\src\misc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lib\ThirdParty\STMicroelectronics\STM32F4xx_StdPeriphLib_1_0_0\src\stm32f4xx_adc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lib\ThirdParty\STMicroelectronics\STM32F4xx_StdPeriphLib_1_0_0\src\stm32f4xx_can.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lib\ThirdParty\STMicroelectronics\STM32F4xx_StdPeriphLib_1_0_0\src\stm32f4xx_crc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lib\ThirdParty\STMicroelectronics\STM32F4xx_StdPeriphLib_1_0_0\src\stm32f4xx_cryp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lib\ThirdParty\STMicroelectronics\STM32F4xx_StdPeriphLib_1_0_0\src\stm32f4xx_cryp_aes.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lib\ThirdParty\STMicroelectronics\STM32F4xx_StdPeriphLib_1_0_0\src\stm32f4xx_cryp_des.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lib\ThirdParty\STMicroelectronics\STM32F4xx_StdPeriphLib_1_0_0\src\stm32f4xx_cryp_tdes.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lib\ThirdParty\STMicroelectronics\STM32F4xx_StdPeriphLib_1_0_0\src\stm32f4xx_dac.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lib\ThirdParty\STMicroelectronics\STM32F4xx_StdPeriphLib_1_0_0\src\stm32f4xx_dbgmcu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lib\ThirdParty\STMicroelectronics\STM32F4xx_StdPeriphLib_1_0_0\src\stm32f4xx_dcmi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lib\ThirdParty\STMicroelectronics\STM32F4xx_StdPeriphLib_1_0_0\src\stm32f4xx_dma.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lib\ThirdParty\STMicroelectronics\STM32F4xx_StdPeriphLib_1_0_0\src\stm32f4xx_exti.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lib\ThirdParty\STMicroelectronics\STM32F4xx_StdPeriphLib_1_0_0\src\stm32f4xx_flash.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lib\ThirdParty\STMicroelectronics\STM32F4xx_StdPeriphLib_1_0_0\src\stm32f4xx_fsmc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lib\ThirdParty\STMicroelectronics\STM32F4xx_StdPeriphLib_1_0_0\src\stm32f4xx_gpio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lib\ThirdParty\STMicroelectronics\STM32F4xx_StdPeriphLib_1_0_0\src\stm32f4xx_hash.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lib\ThirdParty\STMicroelectronics\STM32F4xx_StdPeriphLib_1_0_0\src\stm32f4xx_hash_md5.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lib\ThirdParty\STMicroelectronics\STM32F4xx_StdPeriphLib_1_0_0\src\stm32f4xx_hash_sha1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lib\ThirdParty\STMicroelectronics\STM32F4xx_StdPeriphLib_1_0_0\src\stm32f4xx_i2c.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lib\ThirdParty\STMicroelectronics\STM32F4xx_StdPeriphLib_1_0_0\src\stm32f4xx_iwdg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lib\ThirdParty\STMicroelectronics\STM32F4xx_StdPeriphLib_1_0_0\src\stm32f4xx_pwr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lib\ThirdParty\STMicroelectronics\STM32F4xx_StdPeriphLib_1_0_0\src\stm32f4xx_rcc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lib\ThirdParty\STMicroelectronics\STM32F4xx_StdPeriphLib_1_0_0\src\stm32f4xx_rng.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lib\ThirdParty\STMicroelectronics\STM32F4xx_StdPeriphLib_1_0_0\src\stm32f4xx_rtc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lib\ThirdParty\STMicroelectronics\STM32F4xx_StdPeriphLib_1_0_0\src\stm32f4xx_sdio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lib\ThirdParty\STMicroelectronics\STM32F4xx_StdPeriphLib_1_0_0\src\stm32f4xx_spi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lib\ThirdParty\STMicroelectronics\STM32F4xx_StdPeriphLib_1_0_0\src\stm32f4xx_syscfg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lib\ThirdParty\STMicroelectronics\STM32F4xx_StdPeriphLib_1_0_0\src\stm32f4xx_tim.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lib\ThirdParty\STMicroelectronics\STM32F4xx_StdPeriphLib_1_0_0\src\stm32f4xx_usart.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lib\ThirdParty\STMicroelectronics\STM32F4xx_StdPeriphLib_1_0_0\src\stm32f4xx_wwdg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="libconf\FS_DT_Conf.h" />
+		<Unit filename="libconf\FreeRTOSConfig.h" />
+		<Unit filename="libconf\stm32f4xx_conf.h" />
 		<Unit filename="src\FST_Blinky.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -246,27 +286,10 @@
 		<Unit filename="src\system_stm32f4xx.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="stm32f401cb_flash.ld" />
-		<Unit filename="stm32f401cb_sram.ld" />
-		<Unit filename="..\FreeRTOSV8.2.1\FreeRTOS\Source\list.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="..\FreeRTOSV8.2.1\FreeRTOS\Source\portable\GCC\ARM_CM4F\port.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="..\FreeRTOSV8.2.1\FreeRTOS\Source\portable\MemMang\heap_1.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="..\FreeRTOSV8.2.1\FreeRTOS\Source\queue.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="..\FreeRTOSV8.2.1\FreeRTOS\Source\tasks.c">
-			<Option compilerVar="CC" />
-		</Unit>
 		<Extensions>
 			<code_completion />
 			<debugger>
-				<target_debugging_settings target="Release" active_interface="ST-link">
+				<target_debugging_settings target="Debug" active_interface="ST-link">
 					<debug_interface interface_id="ST-link" ip_address="localhost" ip_port="4242" path="${EMBLOCKS}\share\contrib" executable="STLinkGDB.exe" description="" dont_start_server="false" backoff_time="1000" options="0" reg_filter="0" active_family="STMicroelectronics">
 						<family_options family_id="STMicroelectronics">
 							<option opt_id="ID_JTAG_SWD" opt_value="swd" />
@@ -283,7 +306,7 @@
 						</family_options>
 					</debug_interface>
 				</target_debugging_settings>
-				<target_debugging_settings target="Debug" active_interface="ST-link">
+				<target_debugging_settings target="Release" active_interface="ST-link">
 					<debug_interface interface_id="ST-link" ip_address="localhost" ip_port="4242" path="${EMBLOCKS}\share\contrib" executable="STLinkGDB.exe" description="" dont_start_server="false" backoff_time="1000" options="0" reg_filter="0" active_family="STMicroelectronics">
 						<family_options family_id="STMicroelectronics">
 							<option opt_id="ID_JTAG_SWD" opt_value="swd" />

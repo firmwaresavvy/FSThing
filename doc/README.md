@@ -20,7 +20,7 @@ FirmwareSavvy Libraries
 * FS_Datatypes(commonly used type definitions and helper functions including interface types)
 * FS_DeviceDrivers (device driver modules for all external ICs used by the project)
 * FS_System (a layer for interfacing software modules to basic system services, e.g. debug UARTs, logging etc)
-* FS_STM32F4xx (hardware abstraction layer for STM32F4xx devices)
+* FS_STM32F4xx_HAL (hardware abstraction layer for STM32F4xx devices)
 
 The libraries are included in the project tree using the GIT submodules functionality as follows:
 
@@ -50,8 +50,6 @@ The libraries are included in the project tree using the GIT submodules function
                                         |
                                         +--FS_DeviceDrivers
                                         |
-                                        +--FS_MCU_Abstractions--+
-                                        |                       |
-                                        |                       +--FS_STM32F4xx 
+                                        +--FS_STM32F4xx_HAL
                                         |
                                         +--FS_System

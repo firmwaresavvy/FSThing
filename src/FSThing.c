@@ -79,7 +79,7 @@ void FSThing_Init(void)
   initHardware();
   initSystem();
   initModules();
-  sys.kernel->startScheduler();
+
 }
 
 /*------------------------------------------------------------------------------
@@ -88,9 +88,6 @@ void FSThing_Init(void)
 
 static void initHardware(void)
 {
-  // Set up system clock, PLL and Flash.
-  SystemInit();
-
   //Ensure all priority bits are assigned as preemption priority bits.
   NVIC_PriorityGroupConfig( NVIC_PriorityGroup_4 );
 
@@ -141,3 +138,23 @@ static void initDebugUART(void)
 
 }
 
+// FreeRTOS application-specific hook functions.
+void vApplicationMallocFailedHook(void)
+{
+
+}
+
+void vApplicationTickHook(void)
+{
+
+}
+
+void vApplicationStackOverflowHook(void)
+{
+
+}
+
+void vApplicationIdleHook(void)
+{
+
+}
