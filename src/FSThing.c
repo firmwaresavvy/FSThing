@@ -20,6 +20,7 @@
 // FS library includes.
 #include "FS_System.h"
 #include "FS_DT_Conf.h"
+#include "FS_STM32F4xxUSART.h"
 
 // ST includes.
 #include "system_stm32f4xx.h" // Basic startup config etc.
@@ -59,7 +60,7 @@ void TIM2_IRQHandler(void);
 static FS_GenericModuleSystemBinding_t sys;
 
 // Hardware interfaces.
-// static FS_STM32F4xxUSARTDriver_t usartPeripherals;
+static FS_STM32F4xxUSARTDriver_t usartPeripherals;
 // static FS_STM32F4xxI2CDriver_t i2cPeripherals;
 // static FS_STM32F4xxSPIDriver_t spiPeripherals;
 static FS_DT_GPIO_ControlInterface_t gpio;
@@ -88,7 +89,7 @@ void FSThing_Init(void)
 /*------------------------------------------------------------------------------
 ----------------------------- END PUBLIC FUNCTIONS -----------------------------
 ------------------------------------------------------------------------------*/
-
+FS_STM32F4xxI2CDriver
 static void initHardware(void)
 {
   //Ensure all priority bits are assigned as preemption priority bits.

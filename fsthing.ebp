@@ -88,7 +88,15 @@
 		</Unit>
 		<Unit filename="lib\FirmwareSavvy\FS_STM32F4xx_HAL\inc\FS_STM32F4xxGPIO.h" />
 		<Unit filename="lib\FirmwareSavvy\FS_STM32F4xx_HAL\inc\FS_STM32F4xxI2C.h" />
+		<Unit filename="lib\FirmwareSavvy\FS_STM32F4xx_HAL\inc\FS_STM32F4xxPinMux.h" />
+		<Unit filename="lib\FirmwareSavvy\FS_STM32F4xx_HAL\inc\FS_STM32F4xxUSART.h" />
 		<Unit filename="lib\FirmwareSavvy\FS_STM32F4xx_HAL\src\FS_STM32F4xxI2C.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lib\FirmwareSavvy\FS_STM32F4xx_HAL\src\FS_STM32F4xxPinMux.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lib\FirmwareSavvy\FS_STM32F4xx_HAL\src\FS_STM32F4xxUSART.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="lib\FirmwareSavvy\FS_System\inc\FS_Console.h" />
@@ -269,6 +277,7 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="libconf\FS_DT_Conf.h" />
+		<Unit filename="libconf\FS_STM32F4xxUSART_Conf.h" />
 		<Unit filename="libconf\FreeRTOSConfig.h" />
 		<Unit filename="libconf\stm32f4xx_conf.h" />
 		<Unit filename="src\FST_Blinky.c">
@@ -290,7 +299,7 @@
 			<code_completion />
 			<debugger>
 				<target_debugging_settings target="Debug" active_interface="ST-link">
-					<debug_interface interface_id="ST-link" ip_address="localhost" ip_port="4242" path="${EMBLOCKS}\share\contrib" executable="STLinkGDB.exe" description="" dont_start_server="false" backoff_time="1000" options="0" reg_filter="0" active_family="STMicroelectronics">
+					<debug_interface interface_id="ST-link" ip_address="localhost" ip_port="4242" path="${EMBLOCKS}\share\contrib" executable="STLinkGDB.exe" description="lib\ThirdParty\STMicroelectronics\STM32F407_SVD\STM32F40x.svd" dont_start_server="false" backoff_time="1000" options="0" reg_filter="0" active_family="STMicroelectronics">
 						<family_options family_id="STMicroelectronics">
 							<option opt_id="ID_JTAG_SWD" opt_value="swd" />
 							<option opt_id="ID_VECTOR_START" opt_value="0x08000000" />

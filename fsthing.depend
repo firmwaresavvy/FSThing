@@ -873,3 +873,23 @@
 	"stm32f4xx_wwdg.h"
 	"stm32f4xx_rcc.h"
 
+1439543834 source:d:\dropbox\firmwaresavvy\code\fsthing\lib\firmwaresavvy\fs_stm32f4xx_hal\src\fs_stm32f4xxusart.c
+	"FS_STM32F4xxUSART.h"
+	<stdbool.h>
+	<string.h>
+	"FreeRTOS.h"
+	"semphr.h"
+
+1439368857 d:\dropbox\firmwaresavvy\code\fsthing\lib\firmwaresavvy\fs_stm32f4xx_hal\inc\fs_stm32f4xxusart.h
+	"FS_DT_Conf.h"
+	"FS_STM32F4xxPinMux.h"
+	"stm32f4xx_conf.h"
+	"FS_STM32F4xxUSART_Conf.h"
+
+1439369487 d:\dropbox\firmwaresavvy\code\fsthing\lib\firmwaresavvy\fs_stm32f4xx_hal\inc\fs_stm32f4xxpinmux.h
+
+1439385183 d:\dropbox\firmwaresavvy\code\fsthing\libconf\fs_stm32f4xxusart_conf.h
+
+1426974799 d:\dropbox\firmwaresavvy\code\freertosv8.2.1\freertos\source\include\semphr.h
+	"queue.h"
+
