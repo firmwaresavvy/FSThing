@@ -1,12 +1,15 @@
 # depslib dependency file v1.0
-1438783641 source:d:\dropbox\firmwaresavvy\code\fsthing\src\fsthing.c
+1439838884 source:d:\dropbox\firmwaresavvy\code\fsthing\src\fsthing.c
 	"FSThing.h"
 	"FS_System.h"
 	"FS_DT_Conf.h"
+	"FS_STM32F4xxUSART.h"
 	"system_stm32f4xx.h"
 	"stm32f4xx_conf.h"
+	<stdbool.h>
 
-1438778975 d:\dropbox\firmwaresavvy\code\fsthing\inc\fsthing.h
+1439836882 d:\dropbox\firmwaresavvy\code\fsthing\inc\fsthing.h
+	"stm32f4xx_conf.h"
 
 1438333779 d:\dropbox\firmwaresavvy\code\fsthing\lib\fs_system\inc\fs_system.h
 	<stdio.h>
@@ -559,11 +562,11 @@
 
 1437570862 d:\dropbox\firmwaresavvy\code\fsthing\lib\firmwaresavvy\fs_datatypes\inc\fs_dt_i2c.h
 
-1438082261 d:\dropbox\firmwaresavvy\code\fsthing\lib\firmwaresavvy\fs_datatypes\inc\fs_dt_usart.h
+1439799783 d:\dropbox\firmwaresavvy\code\fsthing\lib\firmwaresavvy\fs_datatypes\inc\fs_dt_usart.h
 
 1437573071 source:d:\dropbox\firmwaresavvy\code\fsthing\lib\firmwaresavvy\fs_stm32f4xx_hal\src\fs_stm32f4xxi2c.c
 
-1438778502 source:d:\dropbox\firmwaresavvy\code\fsthing\lib\firmwaresavvy\fs_system\src\fs_system.c
+1438784186 source:d:\dropbox\firmwaresavvy\code\fsthing\lib\firmwaresavvy\fs_system\src\fs_system.c
 	"FS_System.h"
 	<stdbool.h>
 
@@ -873,23 +876,34 @@
 	"stm32f4xx_wwdg.h"
 	"stm32f4xx_rcc.h"
 
-1439543834 source:d:\dropbox\firmwaresavvy\code\fsthing\lib\firmwaresavvy\fs_stm32f4xx_hal\src\fs_stm32f4xxusart.c
+1439829252 source:d:\dropbox\firmwaresavvy\code\fsthing\lib\firmwaresavvy\fs_stm32f4xx_hal\src\fs_stm32f4xxusart.c
 	"FS_STM32F4xxUSART.h"
 	<stdbool.h>
 	<string.h>
 	"FreeRTOS.h"
 	"semphr.h"
+	"portable.h"
 
-1439368857 d:\dropbox\firmwaresavvy\code\fsthing\lib\firmwaresavvy\fs_stm32f4xx_hal\inc\fs_stm32f4xxusart.h
+1439829991 d:\dropbox\firmwaresavvy\code\fsthing\lib\firmwaresavvy\fs_stm32f4xx_hal\inc\fs_stm32f4xxusart.h
 	"FS_DT_Conf.h"
 	"FS_STM32F4xxPinMux.h"
 	"stm32f4xx_conf.h"
 	"FS_STM32F4xxUSART_Conf.h"
 
-1439369487 d:\dropbox\firmwaresavvy\code\fsthing\lib\firmwaresavvy\fs_stm32f4xx_hal\inc\fs_stm32f4xxpinmux.h
+1439835438 d:\dropbox\firmwaresavvy\code\fsthing\lib\firmwaresavvy\fs_stm32f4xx_hal\inc\fs_stm32f4xxpinmux.h
+	<stdint.h>
+	"stm32f4xx_gpio.h"
 
-1439385183 d:\dropbox\firmwaresavvy\code\fsthing\libconf\fs_stm32f4xxusart_conf.h
+1439838913 d:\dropbox\firmwaresavvy\code\fsthing\libconf\fs_stm32f4xxusart_conf.h
+	"FreeRTOS.h"
+	"task.h"
 
 1426974799 d:\dropbox\firmwaresavvy\code\freertosv8.2.1\freertos\source\include\semphr.h
 	"queue.h"
+
+1439823106 source:d:\dropbox\firmwaresavvy\code\fsthing\lib\firmwaresavvy\fs_stm32f4xx_hal\src\fs_stm32f4xxpinmux.c
+	"FS_STM32F4xxPinMux.h"
+	"stm32f4xx_conf.h"
+	<stddef.h>
+	<stdbool.h>
 

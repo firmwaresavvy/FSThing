@@ -93,9 +93,6 @@
 		<Unit filename="lib\FirmwareSavvy\FS_STM32F4xx_HAL\src\FS_STM32F4xxI2C.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="lib\FirmwareSavvy\FS_STM32F4xx_HAL\src\FS_STM32F4xxPinMux.c">
-			<Option compilerVar="CC" />
-		</Unit>
 		<Unit filename="lib\FirmwareSavvy\FS_STM32F4xx_HAL\src\FS_STM32F4xxUSART.c">
 			<Option compilerVar="CC" />
 		</Unit>

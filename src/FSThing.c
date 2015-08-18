@@ -26,6 +26,9 @@
 #include "system_stm32f4xx.h" // Basic startup config etc.
 #include "stm32f4xx_conf.h" // Global config file fot Standard Periph Lib.
 
+// C standard library includes.
+#include <stdbool.h>
+
 /*------------------------------------------------------------------------------
 --------------------------------- END INCLUDES ---------------------------------
 ------------------------------------------------------------------------------*/
@@ -89,7 +92,7 @@ void FSThing_Init(void)
 /*------------------------------------------------------------------------------
 ----------------------------- END PUBLIC FUNCTIONS -----------------------------
 ------------------------------------------------------------------------------*/
-FS_STM32F4xxI2CDriver
+
 static void initHardware(void)
 {
   //Ensure all priority bits are assigned as preemption priority bits.
@@ -163,7 +166,7 @@ static void initFineTimer(void)
   counter clock frequency as this gives scope to tweak the global
   timer to be *really* fine later on.
   */
-  prescalerValue = (uint16_t)((SystemCoreClock / 2) / 500000) - 1;
+  prescalerValue = (uint16_t)((SystemCoreClock / 2) / 50000000) - 1;
 
   // Time base configuration.
   TIM_TimeBaseStructInit(&timeBaseInitStruct);
@@ -177,7 +180,8 @@ static void initFineTimer(void)
   TIM_PrescalerConfig(TIM2, prescalerValue, TIM_PSCReloadMode_Immediate);
 
   // Output Compare Timing Mode configuration: Channel1:
-  compareValue = 50000000 / ( 1 / ( FST_FINE_TIMER_INTERVAL_US * 1e-6 ) );
+  // TODO: Work out why it was necessary to divide by 2 here.
+  compareValue = ( 50000000 / ( 1 / ( FST_FINE_TIMER_INTERVAL_US * 1e-6 ) ) ) / 2;
   timOCInitStruct.TIM_OCMode = TIM_OCMode_Timing;
   timOCInitStruct.TIM_OutputState = TIM_OutputState_Enable;
   timOCInitStruct.TIM_Pulse = compareValue;
@@ -200,14 +204,71 @@ static void initWatchdog(void)
 
 static void initDebugUART(void)
 {
+  FS_STM32F4xxUSART_InitStruct_t initStruct;
+  FS_STM32F4xxUSART_InitReturnsStruct_t returns;
+  TaskHandle_t taskHandle;
 
+  FS_STM32F4xxUSART_InitStructInit(&initStruct);
+  FS_STM32F4xxUSART_InitReturnsStructInit(&returns);
+
+  initStruct.instance = &usartPeripherals;
+
+  /*
+  We only want to initialise a single USART. FS_STM32F4xxUSART_InitStructInit()
+  will have cleared the initialise flag for all other peripherals so we can
+  just populate the init struct for the one USART we want to use.
+  */
+  initStruct.usart3InitStruct.initialise = true;
+  initStruct.usart3InitStruct.peripheral = FST_DEBUG_UART_PERIPHERAL;
+
+  // Tx pin.
+  initStruct.usart3InitStruct.txd.port = FST_DEBUG_UART_TXD_PORT;
+  initStruct.usart3InitStruct.txd.portRCCMask = FST_DEBUG_UART_TXD_RCC_MASK;
+  initStruct.usart3InitStruct.txd.pinMask = FST_DEBUG_UART_TXD_PIN_MASK;
+  initStruct.usart3InitStruct.txd.pinSource = FST_DEBUG_UART_TXD_PIN_SOURCE;
+
+  // Rx pin.
+  initStruct.usart3InitStruct.rxd.port = FST_DEBUG_UART_RXD_PORT;
+  initStruct.usart3InitStruct.rxd.portRCCMask = FST_DEBUG_UART_RXD_RCC_MASK;
+  initStruct.usart3InitStruct.rxd.pinMask = FST_DEBUG_UART_RXD_PIN_MASK;
+  initStruct.usart3InitStruct.rxd.pinSource = FST_DEBUG_UART_RXD_PIN_SOURCE;
+
+  // Buffers.
+  initStruct.usart3InitStruct.txBufferSizeBytes = FST_DEBUG_UART_TX_BUFFER_SIZE_BYTES;
+  initStruct.usart3InitStruct.rxBufferSizeBytes = FST_DEBUG_UART_RX_BUFFER_SIZE_BYTES;
+
+  // Peripheral config using ST init struct.
+  USART_StructInit( &( initStruct.usart3InitStruct.stInitStruct ) );
+  initStruct.usart3InitStruct.stInitStruct.USART_BaudRate = FST_DEBUG_UART_BAUD_RATE;
+
+  // Initialise the module.
+  returns = FS_STM32F4xxUSART_Init(&initStruct);
+
+  if(returns.success)
+  {
+    xTaskCreate( returns.mainLoop,
+                "FS_STM32F4xxUSART",
+                FS_STM32F4XXUSART_STACK_DEPTH,
+                NULL,
+                FS_STM32F4XXUSART_TASK_PRIORITY,
+                &taskHandle );
+
+    configASSERT(taskHandle);
+  }
 }
 
 
 // Misc interrupt handlers.
 void TIM2_IRQHandler(void)
 {
-  sys.timeMicroseconds += FST_FINE_TIMER_INTERVAL_US;
+  if (TIM_GetITStatus(TIM2, TIM_IT_CC1) != RESET)
+  {
+    sys.timeMicroseconds += FST_FINE_TIMER_INTERVAL_US;
+    TIM_ClearITPendingBit(TIM2, TIM_IT_CC1 | TIM_IT_Update);
+
+    // Reset the timer's count.
+    TIM2->CNT = 0;
+  }
 }
 
 // FreeRTOS application-specific hook functions.
