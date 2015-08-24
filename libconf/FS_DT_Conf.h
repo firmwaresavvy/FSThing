@@ -3,6 +3,6 @@
 
 #include "FS_DT_GPIO.h"
 #include "FS_DT_I2C.h"
-#include "FS_DT_USART.h"
+#include "FS_DT_IOStream.h"
 
 #endif // FS_DT_CONF_H

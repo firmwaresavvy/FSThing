@@ -81,6 +81,7 @@
 		<Unit filename="inc\stm32f4xx.h" />
 		<Unit filename="inc\system_stm32f4xx.h" />
 		<Unit filename="lib\FirmwareSavvy\FS_Datatypes\inc\FS_DT_I2C.h" />
+		<Unit filename="lib\FirmwareSavvy\FS_Datatypes\inc\FS_DT_IOStream.h" />
 		<Unit filename="lib\FirmwareSavvy\FS_Datatypes\inc\FS_DT_USART.h" />
 		<Unit filename="lib\FirmwareSavvy\FS_Datatypes\inc\fs_dt_gpio.h" />
 		<Unit filename="lib\FirmwareSavvy\FS_Datatypes\src\FS_DT_GPIO.c">
@@ -103,6 +104,9 @@
 		<Unit filename="lib\FirmwareSavvy\FS_System\inc\FS_System.h" />
 		<Unit filename="lib\FirmwareSavvy\FS_System\inc\FS_Time.h" />
 		<Unit filename="lib\FirmwareSavvy\FS_System\inc\fs_exception.h" />
+		<Unit filename="lib\FirmwareSavvy\FS_System\src\FS_Console.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="lib\FirmwareSavvy\FS_System\src\FS_System.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -273,8 +277,10 @@
 		<Unit filename="lib\ThirdParty\STMicroelectronics\STM32F4xx_StdPeriphLib_1_0_0\src\stm32f4xx_wwdg.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="libconf\FS_Console_Conf.h" />
 		<Unit filename="libconf\FS_DT_Conf.h" />
 		<Unit filename="libconf\FS_STM32F4xxUSART_Conf.h" />
+		<Unit filename="libconf\FS_TaskPriorities_Conf.h" />
 		<Unit filename="libconf\FreeRTOSConfig.h" />
 		<Unit filename="libconf\stm32f4xx_conf.h" />
 		<Unit filename="src\FST_Blinky.c">

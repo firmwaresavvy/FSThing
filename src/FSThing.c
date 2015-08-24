@@ -19,8 +19,11 @@
 
 // FS library includes.
 #include "FS_System.h"
-#include "FS_DT_Conf.h"
 #include "FS_STM32F4xxUSART.h"
+
+// FS config headers.
+#include "FS_DT_Conf.h"
+#include "FS_TaskPriorities_Conf.h"
 
 // ST includes.
 #include "system_stm32f4xx.h" // Basic startup config etc.
@@ -122,7 +125,7 @@ static void initSystem(void)
   FS_System_InitStructInit(&initStruct);
   initStruct.sysInstance = &sys;
   initStruct.timerIntervalMicroseconds = FST_FINE_TIMER_INTERVAL_US;
-  initStruct.usart = NULL; // TODO: FIX THIS!!
+  initStruct.usart = &(usartPeripherals.usart3);
   FS_System_Init(&initStruct);
 }
 
@@ -244,6 +247,7 @@ static void initDebugUART(void)
   // Initialise the module.
   returns = FS_STM32F4xxUSART_Init(&initStruct);
 
+  // Create the driver's task.
   if(returns.success)
   {
     xTaskCreate( returns.mainLoop,

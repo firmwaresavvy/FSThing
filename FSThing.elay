@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <EmBlocks_layout_file>
 	<ActiveTarget name="Debug" />
-	<File name="inc\FSThing.h" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="inc\FSThing.h" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="161" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="inc\stm32f4xx.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="416408" topLine="5937" />
+			<Cursor1 position="1876" topLine="17" />
 		</Cursor>
 	</File>
 	<File name="inc\system_stm32f4xx.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -16,9 +16,19 @@
 			<Cursor1 position="1060" topLine="39" />
 		</Cursor>
 	</File>
-	<File name="lib\FirmwareSavvy\FS_Datatypes\inc\FS_DT_USART.h" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="lib\FirmwareSavvy\FS_Datatypes\inc\FS_DT_I2C.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="67" topLine="0" />
+			<Cursor1 position="93" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="lib\FirmwareSavvy\FS_Datatypes\inc\FS_DT_IOStream.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="323" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="lib\FirmwareSavvy\FS_Datatypes\inc\FS_DT_USART.h" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="342" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="lib\FirmwareSavvy\FS_STM32F4xx_HAL\inc\FS_STM32F4xxPinMux.h" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -31,14 +41,14 @@
 			<Cursor1 position="1953" topLine="55" />
 		</Cursor>
 	</File>
-	<File name="lib\FirmwareSavvy\FS_STM32F4xx_HAL\src\FS_STM32F4xxUSART.c" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
+	<File name="lib\FirmwareSavvy\FS_STM32F4xx_HAL\src\FS_STM32F4xxUSART.c" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="-1" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="38634" topLine="1341" />
+			<Cursor1 position="42070" topLine="1522" />
 		</Cursor>
 	</File>
-	<File name="lib\FirmwareSavvy\FS_System\inc\FS_Console.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="lib\FirmwareSavvy\FS_System\inc\FS_Console.h" open="1" top="1" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="65" topLine="0" />
+			<Cursor1 position="735" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="lib\FirmwareSavvy\FS_System\inc\FS_System.h" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -51,9 +61,24 @@
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="lib\FirmwareSavvy\FS_System\src\FS_System.c" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="lib\FirmwareSavvy\FS_System\src\FS_Console.c" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="33" topLine="0" />
+			<Cursor1 position="5472" topLine="117" />
+		</Cursor>
+	</File>
+	<File name="lib\FirmwareSavvy\FS_System\src\FS_System.c" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="88" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="lib\ThirdParty\FatFS_R0_11\src\integer.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="598" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="lib\ThirdParty\FreeRTOS_8_2_1\Source\include\FreeRTOS.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="5571" topLine="97" />
 		</Cursor>
 	</File>
 	<File name="lib\ThirdParty\FreeRTOS_8_2_1\Source\include\portable.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -76,14 +101,14 @@
 			<Cursor1 position="32831" topLine="99" />
 		</Cursor>
 	</File>
-	<File name="lib\ThirdParty\FreeRTOS_8_2_1\Source\portable\GCC\ARM_CM4F\port.c" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="lib\ThirdParty\FreeRTOS_8_2_1\Source\portable\GCC\ARM_CM4F\port.c" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="17197" topLine="368" />
+			<Cursor1 position="16965" topLine="368" />
 		</Cursor>
 	</File>
-	<File name="lib\ThirdParty\FreeRTOS_8_2_1\Source\queue.c" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="lib\ThirdParty\FreeRTOS_8_2_1\Source\queue.c" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="51652" topLine="1492" />
+			<Cursor1 position="51772" topLine="1492" />
 		</Cursor>
 	</File>
 	<File name="lib\ThirdParty\FreeRTOS_8_2_1\Source\tasks.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -126,24 +151,39 @@
 			<Cursor1 position="14300" topLine="327" />
 		</Cursor>
 	</File>
-	<File name="libconf\FS_STM32F4xxUSART_Conf.h" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="libconf\FS_Console_Conf.h" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="134" topLine="0" />
+			<Cursor1 position="915" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="libconf\FreeRTOSConfig.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="libconf\FS_DT_Conf.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="4602" topLine="78" />
+			<Cursor1 position="114" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src\FSThing.c" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="libconf\FS_STM32F4xxUSART_Conf.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="0" topLine="213" />
+			<Cursor1 position="634" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src\startup_stm32f4xx.S" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="libconf\FS_TaskPriorities_Conf.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="9439" topLine="141" />
+			<Cursor1 position="320" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="libconf\FreeRTOSConfig.h" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4631" topLine="78" />
+		</Cursor>
+	</File>
+	<File name="src\FSThing.c" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="8831" topLine="226" />
+		</Cursor>
+	</File>
+	<File name="src\startup_stm32f4xx.S" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="9200" topLine="145" />
 		</Cursor>
 	</File>
 	<File name="src\system_stm32f4xx.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
