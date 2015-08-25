@@ -125,7 +125,7 @@ static void initSystem(void)
   FS_System_InitStructInit(&initStruct);
   initStruct.sysInstance = &sys;
   initStruct.timerIntervalMicroseconds = FST_FINE_TIMER_INTERVAL_US;
-  initStruct.usart = &(usartPeripherals.usart3);
+  initStruct.usart = &(usartPeripherals.usart2);
   FS_System_Init(&initStruct);
 }
 
@@ -221,28 +221,30 @@ static void initDebugUART(void)
   will have cleared the initialise flag for all other peripherals so we can
   just populate the init struct for the one USART we want to use.
   */
-  initStruct.usart3InitStruct.initialise = true;
-  initStruct.usart3InitStruct.peripheral = FST_DEBUG_UART_PERIPHERAL;
+  initStruct.usart2InitStruct.initialise = true;
+  initStruct.usart2InitStruct.peripheral = FST_DEBUG_UART_PERIPHERAL;
+  initStruct.usart2InitStruct.nvicIrqChannel = FST_DEBUG_UART_NVIC_IRQ_CHANNEL;
 
   // Tx pin.
-  initStruct.usart3InitStruct.txd.port = FST_DEBUG_UART_TXD_PORT;
-  initStruct.usart3InitStruct.txd.portRCCMask = FST_DEBUG_UART_TXD_RCC_MASK;
-  initStruct.usart3InitStruct.txd.pinMask = FST_DEBUG_UART_TXD_PIN_MASK;
-  initStruct.usart3InitStruct.txd.pinSource = FST_DEBUG_UART_TXD_PIN_SOURCE;
+  initStruct.usart2InitStruct.txd.port = FST_DEBUG_UART_TXD_PORT;
+  initStruct.usart2InitStruct.txd.portRCCMask = FST_DEBUG_UART_TXD_RCC_MASK;
+  initStruct.usart2InitStruct.txd.pinMask = FST_DEBUG_UART_TXD_PIN_MASK;
+  initStruct.usart2InitStruct.txd.pinSource = FST_DEBUG_UART_TXD_PIN_SOURCE;
 
   // Rx pin.
-  initStruct.usart3InitStruct.rxd.port = FST_DEBUG_UART_RXD_PORT;
-  initStruct.usart3InitStruct.rxd.portRCCMask = FST_DEBUG_UART_RXD_RCC_MASK;
-  initStruct.usart3InitStruct.rxd.pinMask = FST_DEBUG_UART_RXD_PIN_MASK;
-  initStruct.usart3InitStruct.rxd.pinSource = FST_DEBUG_UART_RXD_PIN_SOURCE;
+  initStruct.usart2InitStruct.rxd.port = FST_DEBUG_UART_RXD_PORT;
+  initStruct.usart2InitStruct.rxd.portRCCMask = FST_DEBUG_UART_RXD_RCC_MASK;
+  initStruct.usart2InitStruct.rxd.pinMask = FST_DEBUG_UART_RXD_PIN_MASK;
+  initStruct.usart2InitStruct.rxd.pinSource = FST_DEBUG_UART_RXD_PIN_SOURCE;
 
   // Buffers.
-  initStruct.usart3InitStruct.txBufferSizeBytes = FST_DEBUG_UART_TX_BUFFER_SIZE_BYTES;
-  initStruct.usart3InitStruct.rxBufferSizeBytes = FST_DEBUG_UART_RX_BUFFER_SIZE_BYTES;
+  initStruct.usart2InitStruct.txBufferSizeBytes = FST_DEBUG_UART_TX_BUFFER_SIZE_BYTES;
+  initStruct.usart2InitStruct.rxBufferSizeBytes = FST_DEBUG_UART_RX_BUFFER_SIZE_BYTES;
 
   // Peripheral config using ST init struct.
-  USART_StructInit( &( initStruct.usart3InitStruct.stInitStruct ) );
-  initStruct.usart3InitStruct.stInitStruct.USART_BaudRate = FST_DEBUG_UART_BAUD_RATE;
+  USART_StructInit( &( initStruct.usart2InitStruct.stInitStruct ) );
+  initStruct.usart2InitStruct.stInitStruct.USART_BaudRate = FST_DEBUG_UART_BAUD_RATE;
+  USART_ClockStructInit( &( initStruct.usart2InitStruct.stClkInitStruct ) );
 
   // Initialise the module.
   returns = FS_STM32F4xxUSART_Init(&initStruct);
